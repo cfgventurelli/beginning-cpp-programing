@@ -62,7 +62,6 @@ Additional functionality if you wish to extend this program.
 Good luck!
 */
 
-
 #include <iostream>
 #include <cctype>
 #include <vector>
@@ -89,7 +88,7 @@ int main ()
     cout << "P - Print numbers" << endl;
     cout << "A - Add a number" << endl;
     cout << "M - Display mean of the numbers" << endl;
-    cout << "S - Display the smallets number" << endl;
+    cout << "S - Display the smallest number" << endl;
     cout << "L - Display the largest number" << endl;
     cout << "Q - Quit" << endl;
     cout << endl;
@@ -147,7 +146,7 @@ int main ()
           break;
         }
 
-        cout << "The smallets number is: " << smallestNumber << endl;
+        cout << "The smallest number is: " << smallestNumber << endl;
         break;
       case 'L':
         if (vectorOfNumbers.size() == 0)
