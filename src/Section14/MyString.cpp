@@ -46,6 +46,8 @@ MyString &MyString::operator=(const MyString &ms)
   if (this == &ms)
     return *this;
 
+  delete [] this->str;
+  this->str = new char [std::strlen(ms.str) + 1];
   std::strcpy(this->str, ms.str);
 
   return *this;
@@ -57,6 +59,7 @@ MyString &MyString::operator=(MyString &&ms)
   if (this == &ms)
     return *this;
 
+  delete [] this->str;
   this->str = ms.str;
 
   ms.str = nullptr;
@@ -200,6 +203,7 @@ MyString &MyString::operator++()
 
   temp[len] = 'X';
 
+  delete [] this->str;
   this->str = temp;
 
   temp = nullptr;
@@ -230,6 +234,7 @@ MyString &MyString::operator--()
   for (size_t i {0}; i < len - 1; ++i)
     temp[i] = this->str[i];
 
+  delete [] this->str;
   this->str = temp;
 
   temp = nullptr;
