@@ -1,3 +1,6 @@
+#ifndef _ACCOUNT_UTIL_H_
+#define _ACCOUNT_UTIL_H_
+
 #include <iostream>
 #include <vector>
 #include "Account.h"
@@ -20,3 +23,5 @@ void withdraw(std::vector<CheckingAccount> &checking_accounts, double amount);
 void display(const std::vector<TrustAccount> &trust_accounts);
 void deposit(std::vector<TrustAccount> &trust_accounts, double amount);
 void withdraw(std::vector<TrustAccount> &trust_accounts, double amount);
+
+#endif

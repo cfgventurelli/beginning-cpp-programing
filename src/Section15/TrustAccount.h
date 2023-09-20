@@ -18,8 +18,8 @@ class TrustAccount: public Account
   public:
     // Constants
     static constexpr double DEFAULT_INTEREST_RATE {0.0};
-    static constexpr double MAX_WITHDRAWALS {20.0};
-    static constexpr short MAX_WITHDRAW_PERCENT {3};
+    static constexpr double MAX_WITHDRAW_PERCENT {20.0};
+    static constexpr short MAX_WITHDRAWALS {3};
     static constexpr double BONUS_THRESHOLD {5000.0};
     static constexpr double BONUS_VALUE {50.0};
 
